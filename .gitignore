@@ -1,1 +1,4 @@
 spray-crud/project/project/target
+akka-http-crud/project/project/*
+akka-http-crud/project/target/*
+akka-http-crud/target/*
