@@ -10,7 +10,13 @@ trait QuestionResource extends MyResource {
 
   val questionService: QuestionService
 
-  def questionRoutes: Route = pathPrefix("questions") {
+  def questionRoutes: Route = path("prattle") {
+    complete("whateveryoulike")
+  }
+
+
+
+  def questionRoutes2: Route = pathPrefix("questions") {
     pathEnd {
       post {
         entity(as[Question]) { question =>
